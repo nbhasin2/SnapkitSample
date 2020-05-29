@@ -18,7 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Toggle between:
         // AnchorConstraintViewController()
         // SnapkitViewController()
-        window?.rootViewController = AnchorConstraintViewController()
+        // let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        // let mainStoryboardViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainStoryboardViewController")
+        window?.rootViewController = SnapkitViewController()
         window?.makeKeyAndVisible()
     }
 }

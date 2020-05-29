@@ -10,7 +10,7 @@ import Foundation
 import SnapKit
 import UIKit
 
-class SnapkitViewController: BaseViewController {
+class SnapkitViewController: BaseConstraintViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

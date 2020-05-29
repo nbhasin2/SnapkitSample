@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Storyboard View Controller-->
+        <scene sceneID="otN-FZ-oaR">
+            <objects>
+                <viewController storyboardIdentifier="MainStoryboardViewController" id="ftk-Lz-LJH" customClass="MainStoryboardViewController" customModule="SnapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJZ-nc-W26">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="YCa-rS-V0N">
+                                <rect key="frame" x="0.0" y="253" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="8K5-C1-RsK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RR-rv-rjM">
+                                <rect key="frame" x="10" y="802" width="394" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZLj-hK-1vn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Sample Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainStoryboardViewController" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geg-NK-0hd">
+                                <rect key="frame" x="0.0" y="54" width="414" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="geg-NK-0hd" firstAttribute="leading" secondItem="d4x-1S-uKx" secondAttribute="leading" id="IOn-ee-bLU"/>
+                            <constraint firstItem="6RR-rv-rjM" firstAttribute="leading" secondItem="d4x-1S-uKx" secondAttribute="leading" constant="10" id="It3-LD-QfN"/>
+                            <constraint firstItem="d4x-1S-uKx" firstAttribute="trailing" secondItem="geg-NK-0hd" secondAttribute="trailing" id="NBg-yD-bCw"/>
+                            <constraint firstItem="d4x-1S-uKx" firstAttribute="trailing" secondItem="YCa-rS-V0N" secondAttribute="trailing" id="RMG-nB-tdZ"/>
+                            <constraint firstItem="d4x-1S-uKx" firstAttribute="trailing" secondItem="6RR-rv-rjM" secondAttribute="trailing" constant="10" id="gYl-aB-JfB"/>
+                            <constraint firstItem="geg-NK-0hd" firstAttribute="top" secondItem="d4x-1S-uKx" secondAttribute="top" constant="10" id="onl-SZ-mvH"/>
+                            <constraint firstItem="YCa-rS-V0N" firstAttribute="centerY" secondItem="d4x-1S-uKx" secondAttribute="centerY" id="rbm-kP-ROt"/>
+                            <constraint firstItem="YCa-rS-V0N" firstAttribute="leading" secondItem="d4x-1S-uKx" secondAttribute="leading" id="tXe-0G-Xke"/>
+                            <constraint firstItem="d4x-1S-uKx" firstAttribute="bottom" secondItem="6RR-rv-rjM" secondAttribute="bottom" constant="10" id="vUN-mw-fJ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d4x-1S-uKx"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="6RR-rv-rjM" id="h8l-jk-3fr"/>
+                        <outlet property="middleImageView" destination="YCa-rS-V0N" id="dkc-PL-vkM"/>
+                        <outlet property="topLabel" destination="geg-NK-0hd" id="mKh-0x-rBs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9on-Zb-9gO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="-95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1920" height="1200"/>
+    </resources>
+</document>

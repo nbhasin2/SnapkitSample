@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  BaseConstraintViewController.swift
 //  MVCSplit
 //
 //  Created by Nishant Bhasin on 2020-05-28.
@@ -28,7 +28,7 @@ import SnapKit
 
 */
 
-class BaseViewController: UIViewController{
+class BaseConstraintViewController: UIViewController{
     // MARK: Views
     // Top label stored properly initialized with a closure
     // is done only once but you can later change its values
@@ -52,7 +52,6 @@ class BaseViewController: UIViewController{
         button.setTitle("Sample Button", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         button.setTitleColor(UIColor.white, for: .normal)
-        button.layer.cornerRadius = 10
         button.backgroundColor = .systemBlue
         return button
     }()

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AnchorConstraintViewController: BaseViewController {
+class AnchorConstraintViewController: BaseConstraintViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
