@@ -22,9 +22,9 @@ This is a simple repo to show how you can easily programatically create views us
 // let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 // let mainStoryboardViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainStoryboardViewController")
 // Comment the ones you don't want to show.
-window?.rootViewController = AnchorConstraintViewController() // AnchorConstraintViewController
-window?.rootViewController = SnapkitViewController() // SnapkitViewController
-window?.rootViewController = SnapkitViewController() // MainStoryboardViewController
+// window?.rootViewController = AnchorConstraintViewController() // AnchorConstraintViewController
+// window?.rootViewController = SnapkitViewController() // SnapkitViewController
+ //window?.rootViewController = SnapkitViewController() // MainStoryboardViewController
 ```
 
 There is a BaseConstraintViewController which has all the views initialized in a closure format. 
