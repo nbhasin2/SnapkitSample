@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43811E5824815B85001C15F0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43811E5724815B85001C15F0 /* SnapKit.framework */; };
 		43833D7F24803A81003CB330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833D7E24803A81003CB330 /* AppDelegate.swift */; };
 		43833D8124803A81003CB330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833D8024803A81003CB330 /* SceneDelegate.swift */; };
-		43833D8324803A81003CB330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833D8224803A81003CB330 /* ContentView.swift */; };
 		43833D8524803A84003CB330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43833D8424803A84003CB330 /* Assets.xcassets */; };
-		43833D8824803A84003CB330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43833D8724803A84003CB330 /* Preview Assets.xcassets */; };
 		43833D8B24803A84003CB330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43833D8924803A84003CB330 /* LaunchScreen.storyboard */; };
 		43833D9624803A84003CB330 /* SnapKitSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833D9524803A84003CB330 /* SnapKitSampleTests.swift */; };
 		43833DA124803A84003CB330 /* SnapKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833DA024803A84003CB330 /* SnapKitSampleUITests.swift */; };
+		43833DB82480DC49003CB330 /* SnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833DB52480DC49003CB330 /* SnapkitViewController.swift */; };
+		43833DB92480DC49003CB330 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833DB62480DC49003CB330 /* BaseViewController.swift */; };
+		43833DBA2480DC49003CB330 /* AnchorConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43833DB72480DC49003CB330 /* AnchorConstraintViewController.swift */; };
+		43C7A4BC24816A2F00EC7F28 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C7A4BB24816A2F00EC7F28 /* SceneDelegateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43811E5724815B85001C15F0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		43833D7B24803A81003CB330 /* SnapKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43833D7E24803A81003CB330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43833D8024803A81003CB330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43833D8224803A81003CB330 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43833D8424803A84003CB330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		43833D8724803A84003CB330 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43833D8A24803A84003CB330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43833D8C24803A84003CB330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43833D9124803A84003CB330 /* SnapKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,10 @@
 		43833D9C24803A84003CB330 /* SnapKitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapKitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43833DA024803A84003CB330 /* SnapKitSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitSampleUITests.swift; sourceTree = "<group>"; };
 		43833DA224803A84003CB330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43833DB52480DC49003CB330 /* SnapkitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapkitViewController.swift; sourceTree = "<group>"; };
+		43833DB62480DC49003CB330 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		43833DB72480DC49003CB330 /* AnchorConstraintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorConstraintViewController.swift; sourceTree = "<group>"; };
+		43C7A4BB24816A2F00EC7F28 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43811E5824815B85001C15F0 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +83,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43811E5A24815D09001C15F0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43833DB62480DC49003CB330 /* BaseViewController.swift */,
+				43833DB72480DC49003CB330 /* AnchorConstraintViewController.swift */,
+				43833DB52480DC49003CB330 /* SnapkitViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43811E5B24815D09001C15F0 /* AppRelated */ = {
+			isa = PBXGroup;
+			children = (
+				43833D7E24803A81003CB330 /* AppDelegate.swift */,
+				43833D8024803A81003CB330 /* SceneDelegate.swift */,
+				43C7A4BB24816A2F00EC7F28 /* SceneDelegateExtension.swift */,
+			);
+			path = AppRelated;
+			sourceTree = "<group>";
+		};
+		43811E5C24815D09001C15F0 /* General  */ = {
+			isa = PBXGroup;
+			children = (
+				43833D8424803A84003CB330 /* Assets.xcassets */,
+				43833D8924803A84003CB330 /* LaunchScreen.storyboard */,
+			);
+			path = "General ";
+			sourceTree = "<group>";
+		};
 		43833D7224803A81003CB330 = {
 			isa = PBXGroup;
 			children = (
+				43811E5724815B85001C15F0 /* SnapKit.framework */,
 				43833D7D24803A81003CB330 /* SnapKitSample */,
 				43833D9424803A84003CB330 /* SnapKitSampleTests */,
 				43833D9F24803A84003CB330 /* SnapKitSampleUITests */,
@@ -99,23 +136,12 @@
 		43833D7D24803A81003CB330 /* SnapKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				43833D7E24803A81003CB330 /* AppDelegate.swift */,
-				43833D8024803A81003CB330 /* SceneDelegate.swift */,
-				43833D8224803A81003CB330 /* ContentView.swift */,
-				43833D8424803A84003CB330 /* Assets.xcassets */,
-				43833D8924803A84003CB330 /* LaunchScreen.storyboard */,
 				43833D8C24803A84003CB330 /* Info.plist */,
-				43833D8624803A84003CB330 /* Preview Content */,
+				43811E5B24815D09001C15F0 /* AppRelated */,
+				43811E5C24815D09001C15F0 /* General  */,
+				43811E5A24815D09001C15F0 /* ViewControllers */,
 			);
 			path = SnapKitSample;
-			sourceTree = "<group>";
-		};
-		43833D8624803A84003CB330 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				43833D8724803A84003CB330 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		43833D9424803A84003CB330 /* SnapKitSampleTests */ = {
@@ -146,6 +172,7 @@
 				43833D7724803A81003CB330 /* Sources */,
 				43833D7824803A81003CB330 /* Frameworks */,
 				43833D7924803A81003CB330 /* Resources */,
+				43811E5E24815E2A001C15F0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				43833D8B24803A84003CB330 /* LaunchScreen.storyboard in Resources */,
-				43833D8824803A84003CB330 /* Preview Assets.xcassets in Resources */,
 				43833D8524803A84003CB330 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +288,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43811E5E24815E2A001C15F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		43833D7724803A81003CB330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43833DB92480DC49003CB330 /* BaseViewController.swift in Sources */,
 				43833D7F24803A81003CB330 /* AppDelegate.swift in Sources */,
+				43833DBA2480DC49003CB330 /* AnchorConstraintViewController.swift in Sources */,
+				43C7A4BC24816A2F00EC7F28 /* SceneDelegateExtension.swift in Sources */,
 				43833D8124803A81003CB330 /* SceneDelegate.swift in Sources */,
-				43833D8324803A81003CB330 /* ContentView.swift in Sources */,
+				43833DB82480DC49003CB330 /* SnapkitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +485,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SnapKitSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnapKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,8 +507,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SnapKitSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnapKitSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
