@@ -27,7 +27,7 @@ class SnapkitViewController: BaseConstraintViewController {
         
         // Add all the views
         view.addSubview(topLabel)
-        view.addSubview(middleImageView)
+        view.addSubview(centerImageView)
         view.addSubview(bottomButton)
         
         // Constraints
@@ -43,7 +43,7 @@ class SnapkitViewController: BaseConstraintViewController {
             make.height.equalTo(40)
         }
         
-        middleImageView.snp.makeConstraints { make in
+        centerImageView.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()

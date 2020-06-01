@@ -18,7 +18,7 @@ import SnapKit
 |----------------|
 |                |
 |                |
-|  Description   | [Middle View]
+|   ImageView    | [Center View]
 |                |
 |                |
 |----------------|
@@ -42,7 +42,7 @@ class BaseConstraintViewController: UIViewController{
         label.adjustsFontSizeToFitWidth = true
         return label
     }()
-    var middleImageView: UIImageView = {
+    var centerImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Image"))
         imageView.contentMode = .scaleAspectFit
         return imageView

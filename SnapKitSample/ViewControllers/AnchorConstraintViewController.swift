@@ -26,7 +26,7 @@ class AnchorConstraintViewController: BaseConstraintViewController {
         
         // Add all the views
         view.addSubview(topLabel)
-        view.addSubview(middleImageView)
+        view.addSubview(centerImageView)
         view.addSubview(bottomButton)
         
         /// Constraints
@@ -38,7 +38,7 @@ class AnchorConstraintViewController: BaseConstraintViewController {
         // Otherwise if we want to deal with frames then we don't need to
         // set it as false
         topLabel.translatesAutoresizingMaskIntoConstraints = false
-        middleImageView.translatesAutoresizingMaskIntoConstraints = false
+        centerImageView.translatesAutoresizingMaskIntoConstraints = false
         bottomButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -48,11 +48,11 @@ class AnchorConstraintViewController: BaseConstraintViewController {
             topLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             topLabel.heightAnchor.constraint(equalToConstant: 40),
             
-            // Middle
-            middleImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            middleImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            middleImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            middleImageView.heightAnchor.constraint(equalToConstant: 400),
+            // Center
+            centerImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            centerImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            centerImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            centerImageView.heightAnchor.constraint(equalToConstant: 400),
             
             // Bottom
             bottomButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),

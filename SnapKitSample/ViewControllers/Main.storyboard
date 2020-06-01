@@ -55,7 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomButton" destination="6RR-rv-rjM" id="h8l-jk-3fr"/>
-                        <outlet property="middleImageView" destination="YCa-rS-V0N" id="dkc-PL-vkM"/>
+                        <outlet property="centerImageView" destination="YCa-rS-V0N" id="dkc-PL-vkM"/>
                         <outlet property="topLabel" destination="geg-NK-0hd" id="mKh-0x-rBs"/>
                     </connections>
                 </viewController>

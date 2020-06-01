@@ -12,7 +12,7 @@ import UIKit
 class MainStoryboardViewController: UIViewController {
     
     @IBOutlet weak var topLabel: UILabel!
-    @IBOutlet weak var middleImageView: UIImageView!
+    @IBOutlet weak var centerImageView: UIImageView!
     @IBOutlet weak var bottomButton: UIButton!
     
     override func viewDidLoad() {
